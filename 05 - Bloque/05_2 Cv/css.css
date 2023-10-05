@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: pink;
+}
+#encabezado{
+    background-image: url(./Imagenes/Spider-Man.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+#imagen{
+    width: 10%;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+#datos{
+    background-color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#datos_p{
+text-align: center;
+background-color: blue;
+padding: 20px;
+}
+#footer{
+    
+}
+.negrita{
+    font-weight: bold;
+}
+.lista{
+    list-style-type: circle;
+}
