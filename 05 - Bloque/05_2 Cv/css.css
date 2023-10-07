@@ -1,39 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: pink;
+
+html {
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+    background-color: white;
 }
-#encabezado{
+
+body {
+    background: linear-gradient(180deg, rgb(0, 102, 255), rgba(226, 75, 48, 0.918));
+}
+
+ul {
+    padding-left: 5em;
+    margin-right: 2%;
+    font-size: 30px;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+#imagen {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+
+}
+
+.negrita {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.titulo_f {
+    text-align: center;
+    background-color: red;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#encabezado {
     background-image: url(./Imagenes/Spider-Man.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#imagen{
-    width: 10%;
-    display: block;
-    margin: auto;
-    padding-top: 20px;
-}
-#datos{
+
+#datos {
     background-color: red;
-    margin-bottom: 20px;
+    margin: auto;
     text-align: center;
+    max-width: 100%;
 }
-#datos_p{
-text-align: center;
-background-color: blue;
-padding: 20px;
-}
-#footer{
-    
-}
-.negrita{
+
+#datos_p {
+    text-align: center;
+    background-color: rgb(52, 52, 235);
+    padding: 2%;
     font-weight: bold;
+    font-size: 30px;
 }
-.lista{
-    list-style-type: circle;
+
+.padding {
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+
+.fecha {
+    font-size: 30px;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.font {
+    font-size: 30px;
+}
+
+.indent {
+    text-indent: 23%;
+    margin-top: 2%;
+}
+
+.marging {
+    padding: 4%;
+}
+
+footer {
+    background-color: rgb(23, 23, 231);
+    width: 100%;
+}
+
+.tamaño {
+    margin-left: 32%;
 }
