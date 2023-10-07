@@ -2,4 +2,4 @@ Aquí puedes ver el [índice](https://francorossids.github.io/Taller_Programacio
 
 
 El día 21 de Septiembre de 2023 empezé el Taller en Programación Web de la Casa del Futuro
-En este repositorio iré subiendo las clases 
+En este repositorio iré subiendo las clases/actividades 
