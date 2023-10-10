@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    max-width: 50%;
+    margin-left: 20%;
+}
+.desc{
+    width: 100%;
+    padding: 1%;
+    background-color: rgb(51, 223, 51);
+    right: 50%;
+}
+.dross{
+    position: relative;;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 1%;
+    background-color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.emp{
+    position: absolute;
+    width: 18%;
+    top: 3%;
+    right: 2%;
+}
