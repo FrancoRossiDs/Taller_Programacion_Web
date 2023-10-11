@@ -108,7 +108,7 @@ footer{
     height: 23vh;
     border-radius: 15px 15px 0 0;   
 }
-.circulo{
+.circulo1{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -120,6 +120,31 @@ footer{
     background-position: cover;
     box-shadow: 0px 0px 12px; 
 }
+.circulo2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 36%;
+    left: 28%;
+    background-image: url(../imagenes/dross_pelo_largo.jpeg);
+    background-position: center;
+    background-position: cover;
+    box-shadow: 0px 0px 12px; 
+}
+.circulo3{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 36%;
+    left: 28%;
+    background-image: url(../imagenes/dross_fino.jpeg);
+    background-position: center;
+    background-position: cover;
+    box-shadow: 0px 0px 12px; 
+}
+
 .texto{
     position: absolute;
     left: 10px;
