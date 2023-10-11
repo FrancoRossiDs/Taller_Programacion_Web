@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 html{
+    background-color: grey;
+}
+body{
     max-width: 50%;
     margin-left: 20%;
+    width: 100%;
 }
 .desc{
     width: 100%;
@@ -26,7 +30,108 @@ html{
 
 .emp{
     position: absolute;
-    width: 18%;
+    width: 180px;
+    height: 120px;
     top: 3%;
-    right: 2%;
+    right: 1%;
+}
+
+.cua{
+    max-width: 100%;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    position: relative;
+        
+}
+.cuadrado{
+    width: 250px;
+    height: 480px;
+    position: absolute;
+}
+.cuadrado1{
+    background-color: blue;
+    right: 20px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    border-radius: 15px;
+}
+.cuadrado2{
+    background-color: blue;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 15%;
+    margin-bottom: 15%;
+    border-radius: 15px;
+}
+.cuadrado3{
+    background-color: blue;
+    left: 20px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    border-radius: 15px;
+    
+}
+footer{
+    padding: 25px;
+    background-color:rgb(51, 223, 51); ;
+}
+.im{
+    background-color: aqua;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px 15px 0 0;   
+}
+.im2 {
+    background-color: aqua;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px 15px 0 0;   
+}
+.im3 {
+    background-color: aqua;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px 15px 0 0;   
+}
+.imagen{
+    width: 100%;
+    height: 23vh;
+    border-radius: 15px 15px 0 0;   
+}
+.circulo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 36%;
+    left: 28%;
+    background-image: url(../imagenes/es_la_meca.jpeg);
+    background-position: center;
+    background-position: cover;
+    box-shadow: 0px 0px 12px; 
+}
+.texto{
+    position: absolute;
+    left: 10px;
+    top: 58%;
+    color: aqua;
+}
+.button{
+    position: absolute;
+    top: 88%;
+    left: 16%;
+    transform: translateX(50%);
+    background-color: green;
+    padding: 15px;
+    box-shadow: 0px 0px 15px;
 }
