@@ -1,161 +1,183 @@
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-html{
+
+html {
     background-color: grey;
+    position: relative;
+    max-width: 100%;
 }
-body{
-    max-width: 75%;
+
+body {
     margin-left: 20%;
-    width: 65%;
+    max-width: 75%;
+    width: 60%;
 }
-.desc{
-    width: 100%;
-    padding: 1%;
+
+.desc {
     background-color: rgb(51, 223, 51);
+    padding: 1%;
     right: 50%;
-}
-.dross{
-    position: relative;;
     width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 1%;
+}
+
+.dross {
     background-color: blueviolet;
+    padding-bottom: 6%;
+    padding-left: 1%;
+    padding-top: 5%;
+    position: relative;
+    width: 100%;
+}
+.letras{
     font-size: 30px;
     font-weight: bold;
+    margin: auto;
 }
 
-.emp{
-    position: absolute;
-    width: 180px;
+.emp {
     height: 120px;
-    top: 3%;
+    position: absolute;
+    bottom: 1%;
     right: 1%;
+    top: 3%;
+    padding: 1%;
+    width: 25%;
+    height: 18vh;
 }
 
-.cua{
-    max-width: 100%;
-    width: 100%;
-    height: 100vh;
+.cua {
     background-color: white;
+    height: 90vh;
+    max-width: 100%;
     position: relative;
+    width: 100%;
 }
-.cuadrado{
-    width: 250px;
-    height: 480px;
+
+.cuadrado {
+    height: 66%;
     position: absolute;
+    width: 30%;
 }
-.cuadrado1{
+
+.cuadrado1 {
     background-color: blue;
-    right: 20px;
-    margin-top: 15%;
-    margin-bottom: 15%;
     border-radius: 15px;
+    margin-bottom: 6%;
+    margin-top: 6%;
+    right: 20px;
 }
-.cuadrado2{
+
+.cuadrado2 {
     background-color: blue;
+    border-radius: 15px;
+    margin-bottom: 6%;
+    margin-top: 6%;
     right: 50%;
     transform: translateX(50%);
-    margin-top: 15%;
-    margin-bottom: 15%;
-    border-radius: 15px;
 }
-.cuadrado3{
+
+.cuadrado3 {
     background-color: blue;
-    left: 20px;
-    margin-top: 15%;
-    margin-bottom: 15%;
     border-radius: 15px;
-    
+    left: 20px;
+    margin-bottom: 6%;
+    margin-top: 6%;
 }
-footer{
+
+footer {
+    background-color: rgb(51, 223, 51);
     padding: 25px;
-    background-color:rgb(51, 223, 51); ;
 }
-.im{
-    background-color: aqua;
-    width: 100%;
-    height: 45%;
+
+.im {
+    border-radius: 15px 15px 0 0;
+    height: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 15px 15px 0 0;   
+    width: 100%;
 }
+
 .im2 {
-    background-color: aqua;
-    width: 100%;
+    border-radius: 15px 15px 0 0;
     height: 45%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    border-radius: 15px 15px 0 0;   
+    width: 100%;
 }
+
 .im3 {
-    background-color: aqua;
-    width: 100%;
-    height: 45%;
+    border-radius: 15px 15px 0 0;
+    height: 50%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    border-radius: 15px 15px 0 0;   
-}
-.imagen{
     width: 100%;
-    height: 23vh;
-    border-radius: 15px 15px 0 0;   
 }
-.circulo1{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: 36%;
-    left: 28%;
+
+.imagen {
+    border-radius: 15px 15px 0 0;
+    height: 29vh;
+    width: 100%;
+}
+
+.circulo1 {
     background-image: url(../imagenes/es_la_meca.jpeg);
     background-position: center;
     background-position: cover;
-    box-shadow: 0px 0px 12px; 
-}
-.circulo2{
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
+    box-shadow: 0px 0px 12px;
+    height: 100px;
+    left: 28%;
     position: absolute;
     top: 36%;
-    left: 28%;
+    width: 100px;
+}
+
+.circulo2 {
     background-image: url(../imagenes/dross_pelo_largo.jpeg);
     background-position: center;
     background-position: cover;
-    box-shadow: 0px 0px 12px; 
-}
-.circulo3{
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
+    box-shadow: 0px 0px 12px;
+    height: 100px;
+    left: 28%;
     position: absolute;
     top: 36%;
-    left: 28%;
+    width: 100px;
+}
+
+.circulo3 {
     background-image: url(../imagenes/dross_fino.jpeg);
     background-position: center;
     background-position: cover;
-    box-shadow: 0px 0px 12px; 
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px;
+    height: 100px;
+    left: 28%;
+    position: absolute;
+    top: 36%;
+    width: 100px;
 }
 
-.texto{
-    position: absolute;
-    left: 10px;
-    top: 58%;
+.texto {
     color: aqua;
-}
-.button{
+    left: 10px;
     position: absolute;
-    top: 88%;
-    left: 16%;
-    transform: translateX(50%);
+    top: 60%;
+}
+
+.button {
     background-color: green;
-    padding: 15px;
     box-shadow: 0px 0px 15px;
+    left: 25%;
+    position: relative;
+    top: 88%;
+    padding: 3%;
+    transform: translateX(50%);
+}
+.seccionBoton{
+    top: 88%;
 }
