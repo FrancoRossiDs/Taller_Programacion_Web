@@ -50,14 +50,14 @@ body {
 
 .cua {
     background-color: white;
-    height: 90vh;
+    height: 80vh;
     max-width: 100%;
     position: relative;
     width: 100%;
 }
 
 .cuadrado {
-    height: 66%;
+    height: 75%;
     position: absolute;
     width: 30%;
 }
@@ -65,7 +65,7 @@ body {
 .cuadrado1 {
     background-color: blue;
     border-radius: 15px;
-    margin-bottom: 6%;
+    margin-bottom: 1%;
     margin-top: 6%;
     right: 20px;
 }
@@ -73,7 +73,7 @@ body {
 .cuadrado2 {
     background-color: blue;
     border-radius: 15px;
-    margin-bottom: 6%;
+    margin-bottom: 1%;
     margin-top: 6%;
     right: 50%;
     transform: translateX(50%);
@@ -83,7 +83,7 @@ body {
     background-color: blue;
     border-radius: 15px;
     left: 20px;
-    margin-bottom: 6%;
+    margin-bottom: 1%;
     margin-top: 6%;
 }
 
@@ -173,11 +173,12 @@ footer {
     background-color: green;
     box-shadow: 0px 0px 15px;
     left: 25%;
-    position: relative;
+    position: absolute;
     top: 88%;
     padding: 3%;
     transform: translateX(50%);
 }
 .seccionBoton{
     top: 88%;
+    position: relative;
 }
