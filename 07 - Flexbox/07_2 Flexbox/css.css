@@ -1,71 +1,129 @@
-/* Estilos Globales */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* custom font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Pixelify+Sans:wght@400;600&family=Young+Serif&display=swap');
 /* Estilos Body */
-body{
-    background-color: yellow;
+.indice {
+    bottom: 10px;
+    top: 20%;
     width: 100%;
-    height: 100vh;
+    position:absolute;
+}
+
+body {
+    align-items: center;
+    background-color: grey;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-/* Estilos header */
-header{
-    height: 15%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-/* Estilos main */
-main{
-    background-color: blue;
-    flex-grow: 1;
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-/* Estilos footer */
-footer{
-    background-color: green;
-    height: 10%;
-    width: 60%;
-}
-/* Estilos Seccion descuentos */
-.seccionDescuentos{
-    background-color: green;
-    height: 30%;
+    height: 99vh;
     width: 100%;
-    padding-left: 1%;
-    align-items: center;
-    display: flex;
 }
+
 /* Estilos Seccion Dross */
-.seccionDross{
-    background-color: purple;
-    flex-grow: 0;
-    display: flex;
-    justify-content: space-between;
+.seccionDross {
     align-items: center;
-    padding : 1%;
-    font-weight: bold;
+    background-color: purple;
+    display: flex;
+    flex-grow: 0;
     font-size: 40px;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 1%;
 }
+
+/* Estilos Seccion descuentos */
+.seccionDescuentos {
+    align-items: center;
+    background-color: green;
+    display: flex;
+    height: 30%;
+    padding-left: 1%;
+    width: 99%;
+}
+
 /* Estilos cuadrado general */
-.cuadrado{
-    background-color: red;
-    width: 30%;
-    height: 75%;
+.cuadrado {
+    background-color: rgb(95, 95, 233);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    height: 75%;
+    position: relative;
+    width: 30%;
 }
-.bordeImagen{
+
+/* Estilos footer */
+footer {
+    align-items: center;
+    background-color: green;
+    display: flex;
+    font-size: 20px;
+    height: 8%;
+    width: 60%;
+}
+
+/* Estilos header */
+header {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    width: 60%;
+}
+
+/* Estilos imagen redonda */
+.imagenRedonda {
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px;
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    z-index: 1;
+}
+
+/* Estilos main */
+main {
+    align-items: center;
+    background-color: rgb(230, 221, 221);
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    width: 60%;
+}
+
+/* Estilos para el boton */
+.boton {
+    background-color: aqua;
+    padding: 12px;
+}
+
+/* Efecto hover para el boton */
+button:hover {
+    background-color: yellow;
+}
+
+/* Estilos para el borde de la imagen */
+.bordeImagen {
     border-radius: 10px 10px 0 0;
-    width: 100%;
     height: 25vh;
+    width: 100%;
+}
+
+/* Estilos para el texto */
+.seccionTexto {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    font-size: 20px;
+    margin-top: 10%;
+    padding: 2%;
+    font-family: 'Open Sans', sans-serif,'Pixelify Sans', sans-serif,'Young Serif', serif;
+}
+
+/* Estilos para la seccion del boton */
+.seccionBoton {
+    align-items: center;
+    display: flex;
+    height: 6vh;
+    justify-content: center;
+    margin-bottom: 2%;
 }
