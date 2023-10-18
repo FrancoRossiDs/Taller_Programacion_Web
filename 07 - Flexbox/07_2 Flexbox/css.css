@@ -13,7 +13,7 @@ body {
     background-color: grey;
     display: flex;
     flex-direction: column;
-    height: 99vh;
+    height: 120vh;
     width: 100%;
 }
 
@@ -114,7 +114,7 @@ button:hover {
     display: flex;
     flex-grow: 1;
     font-size: 20px;
-    margin-top: 10%;
+    margin-top: 20%;
     padding: 2%;
     font-family: 'Open Sans', sans-serif,'Pixelify Sans', sans-serif,'Young Serif', serif;
 }
