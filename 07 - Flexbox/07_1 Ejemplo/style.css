@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+/* ESTILOS GLOBALES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primario: #FF0000;
+    --color-secundaria: #0000FF;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+body{
+    background-color: var(--color-secundaria);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ESTILOS HEADER */
+header{
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img, header button{
+    width: 48px;
+}
+
+
+header button{
+    padding: 8px 16px;
+}
+
+header button:hover{
+    background-color: var(--color-secundaria);
+}
+
+/* ESTILOS MAIN */
+
+main{
+    height: 500px;
+}
+
+/* ESTILOS FOOTER */
+footer{
+    background-color:var(--color-primario);
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+footer i{
+    font-size: 48px;
+}
+
+/* ESTILOS HEADER Y FOOTER */
+header ul, footer ul{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
