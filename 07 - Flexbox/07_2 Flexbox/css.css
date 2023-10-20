@@ -1,11 +1,12 @@
-/* custom font */
+/* Custom font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Pixelify+Sans:wght@400;600&family=Young+Serif&display=swap');
-/* Estilos Body */
+
+/* Styles Body */
 .indice {
     bottom: 10px;
     top: 20%;
     width: 100%;
-    position:absolute;
+    position: absolute;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     width: 100%;
 }
 
-/* Estilos Seccion Dross */
+/* Styles Seccion Dross */
 .seccionDross {
     align-items: center;
     background-color: purple;
@@ -29,7 +30,7 @@ body {
     padding: 1%;
 }
 
-/* Estilos Seccion descuentos */
+/* Styles Seccion descuentos */
 .seccionDescuentos {
     align-items: center;
     background-color: green;
@@ -39,7 +40,7 @@ body {
     width: 99%;
 }
 
-/* Estilos cuadrado general */
+/* Styles cuadrado general */
 .cuadrado {
     background-color: rgb(95, 95, 233);
     border-radius: 10px;
@@ -50,7 +51,7 @@ body {
     width: 30%;
 }
 
-/* Estilos footer */
+/* Styles footer */
 footer {
     align-items: center;
     background-color: green;
@@ -60,7 +61,7 @@ footer {
     width: 60%;
 }
 
-/* Estilos header */
+/* Styles header */
 header {
     display: flex;
     flex-direction: column;
@@ -68,7 +69,7 @@ header {
     width: 60%;
 }
 
-/* Estilos imagen redonda */
+/* Styles imagen redonda */
 .imagenRedonda {
     border-radius: 50%;
     box-shadow: 0px 0px 12px;
@@ -80,7 +81,7 @@ header {
     z-index: 1;
 }
 
-/* Estilos main */
+/* Styles main */
 main {
     align-items: center;
     background-color: rgb(230, 221, 221);
@@ -90,25 +91,25 @@ main {
     width: 60%;
 }
 
-/* Estilos para el boton */
+/* Styles for the button */
 .boton {
     background-color: aqua;
     padding: 12px;
 }
 
-/* Efecto hover para el boton */
+/* Hover effect for the button */
 button:hover {
     background-color: yellow;
 }
 
-/* Estilos para el borde de la imagen */
+/* Styles for the image border */
 .bordeImagen {
     border-radius: 10px 10px 0 0;
     height: 25vh;
     width: 100%;
 }
 
-/* Estilos para el texto */
+/* Styles for the text */
 .seccionTexto {
     align-items: center;
     display: flex;
@@ -116,14 +117,71 @@ button:hover {
     font-size: 20px;
     margin-top: 20%;
     padding: 2%;
-    font-family: 'Open Sans', sans-serif,'Pixelify Sans', sans-serif,'Young Serif', serif;
+    font-family: 'Open Sans', sans-serif, 'Pixelify Sans', sans-serif, 'Young Serif', serif;
 }
 
-/* Estilos para la seccion del boton */
+/* Styles for the button section */
 .seccionBoton {
     align-items: center;
     display: flex;
     height: 6vh;
     justify-content: center;
     margin-bottom: 2%;
+}
+
+/* Styles for screens with a width of up to 600px (typical for phones) */
+@media (max-width: 600px) {
+    .seccionDross {
+        font-size: 30px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .seccionTexto {
+        font-size: 18px;
+    }
+}
+
+/* Styles for screens with a width between 601px and 1024px (typical for tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .seccionDross {
+        font-size: 36px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    .seccionTexto {
+        font-size: 24px;
+    }
+}
+
+/* Styles for screens with a width of more than 1024px (typical for larger screens) */
+@media (min-width: 1025px) {
+    .seccionDross {
+        font-size: 40px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 60%;
+    }
+
+    .seccionTexto {
+        font-size: 20px;
+    }
 }
