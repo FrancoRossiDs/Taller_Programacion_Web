@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Pixelify+Sans:wght@400;600&family=Young+Serif&display=swap');
 
 .indice{
-    position: absolute;
-    right: 85%;
+    position: relative;
+    right: 33%;
 }
 /* Estilos Body */
 body {
@@ -56,7 +56,7 @@ footer {
     display: flex;
     font-size: 20px;
     height: 8%;
-    width: 60%;
+    width: 80%;
 }
 
 /* Estilos header */
@@ -64,7 +64,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 15%;
-    width: 60%;
+    width: 80%;
 }
 
 /* Estilos imagen redonda */
@@ -86,7 +86,7 @@ main {
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
-    width: 60%;
+    width: 80%;
 }
 
 /* Estilos para el boton */
