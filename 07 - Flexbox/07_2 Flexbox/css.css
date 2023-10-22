@@ -11,7 +11,7 @@ body {
     background-color: grey;
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    height: 140vh;
     max-width: 100%;
 }
 
@@ -55,7 +55,7 @@ footer {
     background-color: green;
     display: flex;
     font-size: 20px;
-    height: 8%;
+    height: 5%;
     width: 80%;
 }
 
@@ -63,7 +63,7 @@ footer {
 header {
     display: flex;
     flex-direction: column;
-    height: 15%;
+    height: 14%;
     width: 80%;
 }
 
