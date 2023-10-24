@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 24px;
+}
+:root{
+    --colorPrimario:/* hacer paleta */
+                    /* https://color.adobe.com/es/create/color-wheel */
+}
