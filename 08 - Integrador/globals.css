@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Pixelify+Sans:wght@400;600&family=Young+Serif&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Pixelify Sans', sans-serif;
+font-family: 'Young Serif', serif; */
 *{
     padding: 0;
     margin: 0;
@@ -23,6 +27,9 @@ p{
     font-size: 24px;
 }
 :root{
-    --colorPrimario:/* hacer paleta */
-                    /* https://color.adobe.com/es/create/color-wheel */
+    --colorPrimario:#3A7FFF
+    --colorSecundario:#EFEFEF
+    --gris:#333333
+    --negro:#000000
+    --blanco:#FFFFFF
 }
