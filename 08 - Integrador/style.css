@@ -1,5 +1,28 @@
+.indice{
+    font-size: 120%;
+}
+.seccionIntroduccion{
+    display: flexbox;
+    text-decoration:underline;
+    color: var(--colorPrimario);
+    padding: 1%;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}
+.seccionPresentacion{
+    display: flexbox;
+    height: 50;
+    position: relative;
+    top: 60px;
+    background-color: var(--colorSecundario);
+    padding: auto;
+}
 header{
-
+    display: flexbox;
+    background-color: var(--colorSecundario);
+    width: 100%;
 }
 button{
     

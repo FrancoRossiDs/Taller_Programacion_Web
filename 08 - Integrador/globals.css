@@ -27,9 +27,9 @@ p{
     font-size: 24px;
 }
 :root{
-    --colorPrimario:#3A7FFF
-    --colorSecundario:#EFEFEF
-    --gris:#333333
-    --negro:#000000
-    --blanco:#FFFFFF
+    --colorPrimario:#3A7FFF;
+    --colorSecundario:#EFEFEF;
+    --gris:#333333;
+    --negro:#000000;
+    --blanco:#FFFFFF;
 }
