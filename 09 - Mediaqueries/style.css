@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cuadrado{
+    width: 100%;
+    height: 50vh;
+    background-color: aquamarine;
+
+}
+@media (min-width: 600px){
+    .cuadrado{
+        background-color: blue;
+    }
+}
