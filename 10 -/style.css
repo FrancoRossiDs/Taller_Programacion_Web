@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+button {
+    padding: 19px 25px;
+    background-color: aqua;
+    color: white;
+    font-weight: bold;
+    border: 5px, solid;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: rgb(25, 89, 145);
+    color: rgb(68, 196, 68);
+    box-shadow: 3px 3px 10px black;
+    transform: scale(0.9);
+}
+
+button:active {
+    background-color: rgb(219, 49, 49);
+    border: none;
+}
+
+.fantasma {
+    animation: fantasma 3s infinite;
+}
+.csgo{
+    animation: csgo 3.68s infinite;
+}
+
+@keyframes fantasma {
+    0% {
+        opacity: 0%;
+        transform: translateX(0%)
+    }
+
+    33% {
+        transform: translateY(-20px);
+        opacity: 100%;
+    }
+
+    66% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateX(80%);
+        opacity: 0%;
+    }
+}
+
+@keyframes csgo {
+    10%{transform: translateY(100px);} 
+    30%{transform: translateY(-50px);}
+    40%{transform: translateY(40px);}
+    50%{transform: translateY(-40px);}
+    55%{transform: translateY(10px);}
+    65%{transform: translateY(-10px);}
+    70%{transform: translateY(50pvh);}
+}
