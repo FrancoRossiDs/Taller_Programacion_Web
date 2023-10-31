@@ -1,29 +1,47 @@
 .indice{
     font-size: 120%;
 }
-.seccionIntroduccion{
-    display: flexbox;
-    text-decoration:underline;
+.seccionIntroduccion {
+    margin-top: 170px;
+    font-size: 70px;
+    margin-bottom: 50px;
     color: var(--colorPrimario);
-    padding: 1%;
-}
-p{
-    text-align: center;
-    font-weight: bold;
 }
 .seccionPresentacion{
-    display: flexbox;
-    height: 50;
-    position: relative;
-    top: 60px;
-    background-color: var(--colorSecundario);
-    padding: auto;
+    margin-top: 50px;
+    line-height: 1.5;
+    font-size: 30px;
+    text-align: center;
 }
 header{
-    display: flexbox;
-    background-color: var(--colorSecundario);
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer{
+    flex: 0 0 auto;
+    min-height: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main{
+    flex:1;
 }
 button{
-    
+    border: none;
+    background-color: transparent;
+    font-size: 115%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+    background-image: url(./imagenes/portfolio-background-4.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
