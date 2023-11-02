@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <section class="carrosel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./imagenes/blackcatzoningout_meme.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imagenes/huh_cat.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imagenes/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imagenes/KS-crunchy-cat-comp.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imagenes/Png.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imagenes/ux74bsifrpda1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./imagenes/maxresdefault.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
