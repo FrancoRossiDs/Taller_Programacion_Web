@@ -1,34 +1,56 @@
 .seccionIntroduccion {
-    font-size:380%;
+    font-size:200%;
     padding: 5%;
     color: var(--colorPrimario);
-    margin-left: 25%;
-    margin-right: 25%;
 }
 .seccionPresentacion{
-    font-size:200%;
+    margin-bottom: 50px;
+    font-size:100%;
     padding: 5%;
 }
 .seccionBoton{
     background-color: transparent; 
     border: none; 
     cursor: pointer;
-    max-width: 5%;
-    padding: 0.5%;
-    margin-top: 10%;
+    padding: 10px;
+    margin-bottom: 40px;
 }
 .header{
+    position: absolute;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-}
-
-body{
+    justify-content: space-around;
     background-image: url(./imagenes/portfolio-background-4.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    transition: all 2s;
+}
+
+@keyframes invisible {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes toUp {
+    50%{
+        height: 100vh;
+    }
+    100%{
+        height: 0vh;
+    }
+}
+
+body{
+    background-color: red;
 }
