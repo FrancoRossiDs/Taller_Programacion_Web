@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(96, 96, 221);
+        }
+        .tipografia{
+            color: white;
+            background-color: black;
+            font-size: larger;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <button onclick="decirNombre()">
+            Click ME
+        </button>
+        <button onclick="ponerTipografia()">
+            Clickeame para cambiar el font
+        </button>
+        <h1></h1>
+        <h2></h2>
+        <ul></ul>
+        <h2>
+            A quien vas a votar?
+        </h2>
+        <button onclick="alert('Votaste a Javier Milei')">
+            Milei
+        </button>
+        <button onclick="alert('Votaste a Sergio Massa')">
+            Massa
+        </button>
+    </header>
+    <main>
+        <script>
+            /* const nombre=prompt("Decime tu nombre") */
+            /* confirm("¿Quieres galletas?") */
+            /* Nodos */
+            const h1=document.querySelector("h1")
+            h1.innerText="Hola" + nombre
+
+
+            /* Agrego texto */
+            document.querySelector("h1").innerText = "Hola " + nombre
+            document.querySelector("h2").innerText = "Hola a todos"
+            /* Agrego html */
+            document.querySelector("ul").innerHTML="<li>uno<li>dos<li>tres"
+
+
+            /* Función */
+            function decirNombre() {
+                const nombre = prompt("Decime tu nombre");
+                let pregunta = prompt("Es el nombre ingresado " + nombre + " correcto");
+                pregunta = pregunta.toLowerCase(); // Corrected line
+                if (pregunta === "no") {
+                    decirNombre();
+                } else {
+                    const h1 = document.querySelector("h1");
+                    h1.innerText = "Hola " + nombre;
+                }
+            }
+
+// Call the function to start the process
+decirNombre();
+
+            
+            function ponerTipografia(){
+                document.querySelector("body").classList.toggle("tipografia")
+            }
+        </script>
+    </main>
+    <footer></footer>
+</body>
+</html>
