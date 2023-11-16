@@ -7,24 +7,36 @@
     <!-- Archivo css -->
     <link rel="stylesheet" href="globals.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media_laptop.css">
+    <link rel="stylesheet" href="media_queries.css">
     <title>Mi Portfolio</title>
 </head>
 <body>
-    <div class="header">
+    <!-- <div class="cover">
         <h1 class="seccionIntroduccion">Hola, Soy Franco Rossi</h1>
         <h2 class="seccionPresentacion">Soy un Programador autodidacta, apasionado con el mundo del Back and Frontend<br>Actualmente me encuentro haciendo distintos cursos de Java, JavaScript, Python, SQL, Web entre otros</h2>
         <a class="seccionBoton">Ver mas</a>
+    </div> -->
+    <div class="contenedorHeader">
+        <header>
+            <nav class="barraNavegacion">
+                <a href=".seccionIntereses">Intereses</a>
+                <a href=".seccionEducacion">Educacion</a>
+                <a href=".seccionHabilidades">Habilidades</a>
+                <a href=".seccionProyectos">Proyectos</a>
+            </nav> 
+            
+            <button class="botonNavegacion"><img src="./imagenes/angles-up-solid.svg" alt=""></button>
+        </header>
     </div>
-    <header>
-    </header>
+    
     <main>
-        <section>
-            Intereses: <br>
+        <section class="seccionIntereses">
+            <div>Intereses: <br><br>
+
                 Me gusta la música, los videojuegos, ahora principalmente la programació
-                Siempre busco autosuperarme y aprender los máximo posible<br>
+                Siempre busco autosuperarme y aprender los máximo posible<br></div>
         </section>
-        <section>
+        <section class="seccionEducacion">
             Educación: <br>
             He hecho diferentes cursos entre ellos: <br>
             <ul>
@@ -36,7 +48,7 @@
             </ul>
             <br>
         </section>
-        <section>
+        <section class="seccionHabilidades">
             Habilidades:
             <ul>
                 <li>Buen desenvolvimiento a la hora de trabajar en equipo</li>
@@ -49,7 +61,7 @@
             </ul>
             <br>
         </section>
-        <section>
+        <section class="seccionProyectos">
             Proyectos
             <br>
         </section>

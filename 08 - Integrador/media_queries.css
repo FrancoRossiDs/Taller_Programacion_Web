@@ -1,4 +1,5 @@
 @media (min-width: 1200px ) {
+    body{background-color: blue;}
     *{
         margin: 0;
         padding: 0;
@@ -13,5 +14,45 @@
     .seccionBoton{
         font-size: 200%;
         margin-top: 5%;
+    }
+}
+
+@media(max-width:768px)and (min-widht:600px){
+    body{background-color: green;}
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .seccionIntroduccion{
+        font-size: 50px;
+    }
+    .seccionPresentacion{
+        margin-bottom: 3%;
+        font-size:180%;
+    }
+    .seccionBoton{
+        height: -50px;
+        font-size: 200%;
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    body{background-color: aqua;}
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .seccionIntroduccion{
+        font-size: 60px;
+    }
+    .seccionPresentacion{
+        margin-bottom: 3%;
+        font-size:250%;
+    }
+    .seccionBoton{
+        height: -80px;
+        font-size: 200%;
+        margin-top: 7%;
     }
 }

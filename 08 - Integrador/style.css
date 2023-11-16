@@ -16,7 +16,7 @@
     padding: 10px;
     margin-bottom: 180px;
 }
-.header{
+.cover{
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -52,6 +52,68 @@
     }
 }
 
+@keyframes toUp_ {
+    0% {
+        height: 20vh;
+        bottom: 0;
+    }
+    100% {
+        height: 40vh;
+        bottom: -20vh; /* Ajusta el valor según tu preferencia */
+    }
+}
+
 body,header,footer{
-    background-color: red;
+    background-color: rgb(197, 117, 117);
+}
+header{
+    border: 2px solid black;
+    background-color: rgb(209, 195, 195);
+    height: 100px;
+    animation-name:toUp_;
+    transition: all 2s;
+}
+.seccionIntereses{
+    margin:10px;
+    font-size: 20px;
+    background-color: rgb(79, 79, 214);
+}
+
+.seccionEducacion{
+    margin:10px;
+    font-size: 20px;
+    background-color: rgb(200, 214, 79);
+}
+
+.seccionHabilidades{
+    margin:10px;
+    font-size: 20px;
+    background-color: rgb(214, 106, 79);
+}
+
+.seccionProyectos{
+    margin:10px;
+    font-size: 20px;
+    background-color: rgb(79, 194, 214);
+}
+
+.barraNavegacion{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 15px;
+    justify-content: center;
+    letter-spacing: 2px;
+    animation-name:toUp_;
+}
+
+.botonNavegacion{
+    position:absolute;
+    top: 12px;
+    right: 12px;
+    width: 35px;
+    margin-top: 16px;
+}
+
+.contenedorHeader{
+
 }

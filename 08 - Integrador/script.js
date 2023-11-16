@@ -11,5 +11,12 @@ window.onload = ()=>{
             setTimeout(()=>document.querySelector("div").style.display = "none","1900")
         }
     )
-
 }
+
+const botonNav=document.querySelector(".botonNavegacion")
+botonNav.addEventListener("click",
+()=>
+{
+    document.querySelector(".contenedorHeader").style.animation="toUp_ 0.5s"
+    BarraNavegacion.classList.toggle("toUp_");
+});
