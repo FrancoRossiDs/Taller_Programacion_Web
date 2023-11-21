@@ -1,0 +1,51 @@
+/* transition:all 1s */
+a:visited{
+    color: black;
+}
+a:hover{
+    color: rgb(185, 158, 84);
+    transition:all 1s
+}
+a:active{
+    color:violet
+}
+input:focus{
+    outline: none;
+    background-color: tomato;
+}
+input:active{
+    outline: none;
+    background-color: blueviolet;
+}
+input:disabled{
+    outline: none;
+    background-color: peru;
+}
+li:first-child{
+    background-color: crimson;
+}
+li:last-child{
+    background-color: blue;
+}
+li:nth-child(2){
+    background-color: coral;
+}
+li:nth-child(3){
+    background-color: rgb(124, 20, 150);
+}
+li::first-letter{
+    font-size: 40px;
+    color:aliceblue
+}
+li::after{
+
+}
+li:hover::before{
+    font-size: 20px;
+    content:"🤣";
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
