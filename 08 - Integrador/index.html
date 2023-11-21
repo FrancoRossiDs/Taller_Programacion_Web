@@ -19,10 +19,10 @@
     <div class="contenedorHeader">
         <header>
             <nav class="barraNavegacion">
-                <a href=".seccionIntereses">Intereses</a>
-                <a href=".seccionEducacion">Educacion</a>
-                <a href=".seccionHabilidades">Habilidades</a>
-                <a href=".seccionProyectos">Proyectos</a>
+                <a href="#seccionIntereses">Intereses</a>
+                <a href="#seccionEducacion">Educacion</a>
+                <a href="#seccionHabilidades">Habilidades</a>
+                <a href="#seccionProyectos">Proyectos</a>
             </nav> 
             
             <button class="botonNavegacion"><img src="./imagenes/angles-up-solid.svg" alt=""></button>
@@ -30,14 +30,20 @@
     </div>
     
     <main>
-        <section class="seccionIntereses">
-            <div>Intereses: <br><br>
-
+        <section id="seccionIntereses">
+            <div class="tituloInteres">
+                Intereses:
+            </div>
+            <div>
                 Me gusta la música, los videojuegos, ahora principalmente la programació
-                Siempre busco autosuperarme y aprender los máximo posible<br></div>
+                Siempre busco autosuperarme y aprender los máximo posible<br>
+            </div>
         </section>
-        <section class="seccionEducacion">
-            Educación: <br>
+        <section id="seccionEducacion">
+            <div class="tituloEducacion">
+                Educación: 
+            </div>
+            <div>
             He hecho diferentes cursos entre ellos: <br>
             <ul>
                 <li>Programación Web</li>
@@ -46,10 +52,11 @@
                 <li>JavaScript</li>
                 <li>Java</li>
             </ul>
-            <br>
+            </div>
         </section>
-        <section class="seccionHabilidades">
-            Habilidades:
+        <section id="seccionHabilidades">
+            <div class="tituloHabilidades">Habilidades:</div>
+            <div>
             <ul>
                 <li>Buen desenvolvimiento a la hora de trabajar en equipo</li>
                 <li>Buen pensamiendo crítico</li>
@@ -59,11 +66,12 @@
                 <li>Aprendizaje continuo</li>
                 <li>Buena organización</li>
             </ul>
-            <br>
+            </div>
         </section>
-        <section class="seccionProyectos">
-            Proyectos
-            <br>
+        <section id="seccionProyectos">
+            <div class="tituloProyectos">
+                Proyectos
+            </div>
         </section>
     </main>
     <footer></footer> 

@@ -1,14 +1,31 @@
+/* Secciones de elementos específicos */
+a{max-width: 10%;}
+
+body,header,footer{
+    background-color: rgb(197, 117, 117);
+}
+
+header{
+    border: 2px solid black;
+    background-color: rgb(209, 195, 195);
+    height: 100px;
+    animation-name:toUp_;
+    transition: all 2s;
+}
+/* Sección para la introducción */
 .seccionIntroduccion {
     font-size:180%;
     padding: 5%;
     color: var(--colorPrimario);
     margin-top: 20px;
 }
+/* Sección para la presentación */
 .seccionPresentacion{
     font-size:150%;
     padding: 5%;
     font-weight: lighter;
 }
+/* Seccion Boton */
 .seccionBoton{
     background-color: transparent; 
     border: none; 
@@ -30,7 +47,74 @@
     background-attachment: fixed;
     transition: all 2s;
 }
+/* Seccion interes*/
+#seccionIntereses{
+    margin:10px;
+    font-size: 20px;
+    background-color: rgb(79, 79, 214);
+}
+/* Seccion educación*/
+#seccionEducacion{
+    margin:10px;
+    font-size: 20px;
+    background-color: rgb(200, 214, 79);
+}
+/* Seccion habilidades*/
+#seccionHabilidades{
+    margin:10px;
+    font-size: 20px;
+    background-color: rgb(214, 106, 79);
+}
+/* Seccion proyectos*/
+#seccionProyectos{
+    margin:10px;
+    font-size: 20px;
+    background-color: rgb(79, 194, 214);
+}
+/* Seccion para la barra de navegación */
+.barraNavegacion{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 15px;
+    justify-content: center;
+    letter-spacing: 2px;
+    animation-name:toUp_;
+}
+/*Sección para el botón de la barra de navegación */
+.botonNavegacion{
+    position:absolute;
+    top: 12px;
+    right: 12px;
+    width: 35px;
+    margin-top: 16px;
+}
+/* Seccion para los titulos de las secciones */
+.tituloInteres::before{
+    font-size: 19px;
+    content: "🎮";
+    width: 100%;
+    
+}
+/*Sección para el título de la seccion Educacíon */
+.tituloEducacion::before{
+    font-size: 19px;
+    content: "🧠";
+    width: 100%;
+}
+/*Sección para el título de la seccion Habilidades */
+.tituloHabilidades::before{
+    content: "🖥️";
+    font-size: 19px;
+    width: 100%;
+}
+/*Sección para el título de la seccion Proyectos */
+.tituloProyectos::before{
+    font-size: 19px;
+    content: "⌨️";
+    width: 100%;
+}
 
+/* Animaciones */
 @keyframes invisible {
     0%{
         opacity: 1;
@@ -58,62 +142,7 @@
         bottom: 0;
     }
     100% {
-        height: 40vh;
-        bottom: -20vh; /* Ajusta el valor según tu preferencia */
+        height: 50vh;
+        bottom: 100vh; /* Ajusta el valor según tu preferencia */
     }
-}
-
-body,header,footer{
-    background-color: rgb(197, 117, 117);
-}
-header{
-    border: 2px solid black;
-    background-color: rgb(209, 195, 195);
-    height: 100px;
-    animation-name:toUp_;
-    transition: all 2s;
-}
-.seccionIntereses{
-    margin:10px;
-    font-size: 20px;
-    background-color: rgb(79, 79, 214);
-}
-
-.seccionEducacion{
-    margin:10px;
-    font-size: 20px;
-    background-color: rgb(200, 214, 79);
-}
-
-.seccionHabilidades{
-    margin:10px;
-    font-size: 20px;
-    background-color: rgb(214, 106, 79);
-}
-
-.seccionProyectos{
-    margin:10px;
-    font-size: 20px;
-    background-color: rgb(79, 194, 214);
-}
-
-.barraNavegacion{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 10px 10px 15px;
-    justify-content: center;
-    letter-spacing: 2px;
-    animation-name:toUp_;
-}
-
-.botonNavegacion{
-    position:absolute;
-    top: 12px;
-    right: 12px;
-    width: 35px;
-    margin-top: 16px;
-}
-
-.contenedorHeader{
-
 }
