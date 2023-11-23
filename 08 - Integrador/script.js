@@ -13,10 +13,7 @@ window.onload = ()=>{
     )
 }
 
-const botonNav=document.querySelector(".botonNavegacion")
-botonNav.addEventListener("click",
-()=>
-{
-    document.querySelector(".contenedorHeader").style.animation="toUp_ 0.5s"
-    BarraNavegacion.classList.toggle("toUp_");
-});
+function handleMenu(){
+    document.querySelector(".menuInvisible")
+    .classList.toggle("invisible")
+}

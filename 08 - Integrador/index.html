@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome -->
     <!-- Archivo css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="globals.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media_queries.css">
     <title>Mi Portfolio</title>
 </head>
 <body>
@@ -16,19 +15,22 @@
         <h2 class="seccionPresentacion">Soy un Programador autodidacta, apasionado con el mundo del Back and Frontend<br>Actualmente me encuentro haciendo distintos cursos de Java, JavaScript, Python, SQL, Web entre otros</h2>
         <a class="seccionBoton">Ver mas</a>
     </div> -->
-    <div class="contenedorHeader">
-        <header>
+    <header>
+        <section class="menuVisible">
+            <button onclick="handleMenu()" class="botonNavegacion"><i class="fa-solid fa-burger fa "></i></button>
+        </section>
+        <section class="menuInvisible">
+            <button onclick="handleMenu()" class="botonNavegacion"><i class="fa-solid fa-burger fa "></i></button>
+        
             <nav class="barraNavegacion">
                 <a href="#seccionIntereses">Intereses</a>
                 <a href="#seccionEducacion">Educacion</a>
                 <a href="#seccionHabilidades">Habilidades</a>
                 <a href="#seccionProyectos">Proyectos</a>
-            </nav> 
-            
-            <button class="botonNavegacion"><img src="./imagenes/angles-up-solid.svg" alt=""></button>
-        </header>
-    </div>
-    
+            </nav>
+            <i onclick="handleMenu()" class="botonMenu" class="fa-regular fa-circle-xmark"></i>
+        </section>
+    </header>    
     <main>
         <section id="seccionIntereses">
             <div class="tituloInteres">
