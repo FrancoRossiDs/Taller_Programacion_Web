@@ -1,184 +1,217 @@
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    /* Secciones de elementos específicos */
-    a{
-    border-bottom: solid 2px black; 
+/* Secciones de elementos específicos */
+a{  
+    display: flex;
+    align-items: center;
+    border: 1px solid black; 
+    height: 50px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+.menuInvisible a:hover {
+    transform: translate(10px, -9px);
+    box-shadow: -10px 10px black;
+    background-color: rgb(209, 195, 195);
+}
+
+header .menuinvisible{
+    height:100%;
+}
+
+body,header,footer{
+    background-color: rgb(197, 117, 117);
+}
+
+#secciones{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+}
+
+/*Seccion para cuando la display del header esta oculto */
+.menuVisible{
+    position:relative;
+    top: 0px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: rgb(209, 195, 195);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+/*Seccion para cuando la display del header esta visible */
+.menuInvisible{
+    top: 0;
+    position:fixed;
+    width: 100%;
+    display: none;
+    z-index: 2;
+    background-color: rgb(209, 195, 195);
+}
+/* Sección para la introducción */
+.seccionIntroduccion {
+    font-size:180%;
+    padding: 5%;
+    color: var(--colorPrimario);
+    margin-top: 20px;
+}
+/* Sección para la presentación */
+.seccionPresentacion{
+    font-size:150%;
+    padding: 5%;
+    font-weight: lighter;
+}
+/* Seccion Boton */
+.seccionBoton{
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 180px;
+}
+
+.botonNuevo{
+    position:relative ;
     padding: 20px;
-    }
+    border: 1px solid black;
+}
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(./imagenes/portfolio-background-4.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 2s;
+}
+/* Seccion interes*/
+#seccionIntereses,
+#seccionEducacion,
+#seccionHabilidades,
+#seccionProyectos {
+    font-size: 20px;
+    border: 1px solid black;
+}
 
-    body,header,footer{
-        background-color: rgb(197, 117, 117);
-    }
-    /*Seccion para cuando la display del header esta oculto */
-    .menuVisible{
-        position:relative;
-        top: 0px;
-        width: 100%;
-        border: 2px solid black;
-        background-color: rgb(209, 195, 195);
-        height: 40px;
-        display: flex;
-        align-items: center;
-    }
-    /*Seccion para cuando la display del header esta visible */
-    .menuInvisible{
-        width: 100%;
-        height: 17.5em;
-        display: none;
-        position: relative;
-        font-weight: bold;
-        z-index: 999;
-        background-color: rgb(209, 195, 195);
-    }
-    /* Sección para la introducción */
-    .seccionIntroduccion {
-        font-size:180%;
-        padding: 5%;
-        color: var(--colorPrimario);
-        margin-top: 20px;
-    }
-    /* Sección para la presentación */
-    .seccionPresentacion{
-        font-size:150%;
-        padding: 5%;
-        font-weight: lighter;
-    }
-    /* Seccion Boton */
-    .seccionBoton{
-        background-color: transparent; 
-        border: none; 
-        cursor: pointer;
-        padding: 10px;
-        margin-bottom: 180px;
-    }
 
-    .botonNuevo{
-        padding: 20px;
+
+.tituloInteres, .tituloEducacion, .tituloHabilidades, .tituloProyectos{
+    border-bottom: 1px solid black;
+}
+
+/* Seccion educación*/
+#seccionEducacion{
+    
+    font-size: 20px;
+    background-color: rgb(200, 214, 79);
+}
+/* Seccion habilidades*/
+#seccionHabilidades{
+    font-size: 20px;
+    background-color: rgb(214, 106, 79);
+}
+/* Seccion proyectos*/
+#seccionProyectos{
+    font-size: 20px;
+    background-color: rgb(79, 194, 214);
+}
+/* Seccion para la barra de navegación */
+.secciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*Sección para el botón de la barra de navegación */
+.botonNavegacion{
+    width: 35px; 
+    position: absolute;
+    right: 5px;
+    margin: 2px;
+}
+
+
+/* Seccion para los titulos de las secciones */
+.tituloInteres::before{
+    font-size: 19px;
+    content: "🎮";
+    width: 100%;
+    
+}
+/*Sección para el título de la seccion Educacíon */
+.tituloEducacion::before{
+    font-size: 19px;
+    content: "🧠";
+    width: 100%;
+}
+/*Sección para el título de la seccion Habilidades */
+.tituloHabilidades::before{
+    content: "🖥️";
+    font-size: 19px;
+    width: 100%;
+}
+/*Sección para el título de la seccion Proyectos */
+.tituloProyectos::before{
+    font-size: 19px;
+    content: "⌨️";
+    width: 100%;
+}
+/* Seccion del boton dentro de menu */
+.botonMenu{
+    z-index: 2;
+    position: absolute;
+    top: 14px;
+    right: 19px;
+}
+/* Script para hacer invisible */
+.invisible{
+    visibility: hidden;
+}
+.visible{
+    display: block;
+}
+
+
+/* Animaciones */
+@keyframes invisible {
+    0%{
+        opacity: 1;
     }
-    .cover{
-        position: absolute;
-        width: 100%;
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes toUp {
+    50%{
         height: 100vh;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
-        background-image: url(./imagenes/portfolio-background-4.gif);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        transition: all 2s;
     }
-    /* Seccion interes*/
-    #seccionIntereses{
-        font-size: 20px;
-        background-color: rgb(79, 79, 214);
+    100%{
+        height: 0vh;
     }
-    /* Seccion educación*/
-    #seccionEducacion{
-        font-size: 20px;
-        background-color: rgb(200, 214, 79);
-    }
-    /* Seccion habilidades*/
-    #seccionHabilidades{
-        font-size: 20px;
-        background-color: rgb(214, 106, 79);
-    }
-    /* Seccion proyectos*/
-    #seccionProyectos{
-        font-size: 20px;
-        background-color: rgb(79, 194, 214);
-    }
-    /* Seccion para la barra de navegación */
-    .secciones{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;  
-        padding: 1px; 
-    }
-    /*Sección para el botón de la barra de navegación */
-    .botonNavegacion{
-        width: 35px; 
-        position: absolute;
-        right: 5px;
-        height: 2em;
-        margin: 2px;
-    }
-    /* Seccion para los titulos de las secciones */
-    .tituloInteres::before{
-        font-size: 19px;
-        content: "🎮";
-        width: 100%;
-        
-    }
-    /*Sección para el título de la seccion Educacíon */
-    .tituloEducacion::before{
-        font-size: 19px;
-        content: "🧠";
-        width: 100%;
-    }
-    /*Sección para el título de la seccion Habilidades */
-    .tituloHabilidades::before{
-        content: "🖥️";
-        font-size: 19px;
-        width: 100%;
-    }
-    /*Sección para el título de la seccion Proyectos */
-    .tituloProyectos::before{
-        font-size: 19px;
-        content: "⌨️";
-        width: 100%;
-    }
-    /* Seccion del boton dentro de menu */
-    .botonMenu{
-        z-index: 999;
-        position: absolute;
-        top: 14px;
-        right: 19px;
-    }
-    /* Script para hacer invisible */
-    .invisible{
-        display: none;
-    }
-    .visible{
-        display: block;
-    }
+}
 
-
-    /* Animaciones */
-    @keyframes invisible {
-        0%{
-            opacity: 1;
-        }
-        50%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 0;
-        }
+@keyframes toUp_ {
+    0% {
+        height: 20vh;
+        bottom: 0;
     }
-
-    @keyframes toUp {
-        50%{
-            height: 100vh;
-        }
-        100%{
-            height: 0vh;
-        }
+    100% {
+        height: 50vh;
+        bottom: 100vh; /* Ajusta el valor según tu preferencia */
     }
-
-    @keyframes toUp_ {
-        0% {
-            height: 20vh;
-            bottom: 0;
-        }
-        100% {
-            height: 50vh;
-            bottom: 100vh; /* Ajusta el valor según tu preferencia */
-        }
-    }
+}
