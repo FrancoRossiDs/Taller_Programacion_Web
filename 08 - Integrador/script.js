@@ -13,7 +13,20 @@ window.onload = ()=>{
     )
 }
 
-function handleMenu(){
-    document.querySelector(".menuInvisible")
-    .classList.toggle("invisible")
+function handleMenu() {
+    const botonNavegacionVisible = document.querySelector(".menuVisible .botonNavegacion");
+    const botonNavegacionInvisible = document.querySelector(".menuInvisible .botonNavegacion");
+
+    // Toggle visibility of buttons in both sections
+    if (botonNavegacionVisible) {
+        botonNavegacionVisible.style.animation=("invisible");
+    }
+    
+    if (botonNavegacionInvisible) {
+        botonNavegacionInvisible.classList.toggle("invisible");
+    }
+
+    // Toggle visibility of menu sections
+    document.querySelector(".menuInvisible").classList.toggle("visible");
+    document.querySelector(".menuVisible").classList.toggle("invisible");
 }

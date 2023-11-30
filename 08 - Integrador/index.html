@@ -20,18 +20,22 @@
             <button onclick="handleMenu()" class="botonNavegacion"><i class="fa-solid fa-burger fa "></i></button>
         </section>
         <section class="menuInvisible">
+            
             <button onclick="handleMenu()" class="botonNavegacion"><i class="fa-solid fa-burger fa "></i></button>
-        
-            <nav class="barraNavegacion">
-                <a href="#seccionIntereses">Intereses</a>
-                <a href="#seccionEducacion">Educacion</a>
-                <a href="#seccionHabilidades">Habilidades</a>
-                <a href="#seccionProyectos">Proyectos</a>
-            </nav>
-            <i onclick="handleMenu()" class="botonMenu" class="fa-regular fa-circle-xmark"></i>
+            <section class="barraNavegacion">
+                <div class="botonNuevo">
+                    <i onclick="handleMenu()" class="botonMenu fa-regular fa-circle-xmark"></i>
+                </div>
+                <div class="secciones">
+                    <a href="#seccionIntereses">Intereses</a>
+                    <a href="#seccionEducacion">Educacion</a>
+                    <a href="#seccionHabilidades">Habilidades</a>
+                    <a href="#seccionProyectos">Proyectos</a>
+                </div>
+            </section>
         </section>
     </header>    
-    <main>
+    <!-- <main>
         <section id="seccionIntereses">
             <div class="tituloInteres">
                 Intereses:
@@ -75,7 +79,7 @@
                 Proyectos
             </div>
         </section>
-    </main>
+    </main> -->
     <footer></footer> 
 </body>
 <script src="./script.js"></script>
