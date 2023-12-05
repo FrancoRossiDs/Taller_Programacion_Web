@@ -8,7 +8,7 @@
 a{  
     display: flex;
     align-items: center;
-    border: 1px solid black; 
+    border-bottom: 1px solid black; 
     height: 50px;
     padding-left: 5px;
     font-size: 20px;
@@ -23,16 +23,14 @@ header .menuinvisible{
     height:100%;
 }
 
-body,header,footer{
-    background-color: rgb(197, 117, 117);
-}
-
 #secciones{
     display: flex;
     gap: 20px;
     flex-direction: column;
     position: relative;
     padding: 10px;
+    border: none;
+    background-image: linear-gradient(rgb(1, 1, 102), rgb(70, 128, 148));
 }
 
 /*Seccion para cuando la display del header esta oculto */
@@ -110,22 +108,33 @@ body,header,footer{
 .tituloInteres, .tituloEducacion, .tituloHabilidades, .tituloProyectos{
     border-bottom: 1px solid black;
 }
-
+/* Seccion Intereses*/
+#seccionIntereses{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    background-image: linear-gradient(rgb(83, 83, 231), rgb(89, 147, 167));
+}
 /* Seccion educación*/
 #seccionEducacion{
-    
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
-    background-color: rgb(200, 214, 79);
+    background-image: linear-gradient(rgb(194, 160, 12),rgb(170, 172, 103))
 }
 /* Seccion habilidades*/
 #seccionHabilidades{
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
-    background-color: rgb(214, 106, 79);
+    background-image: linear-gradient(rgb(223, 29, 3),rgb(202, 117, 91))
 }
 /* Seccion proyectos*/
 #seccionProyectos{
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
-    background-color: rgb(79, 194, 214);
+    background-image: linear-gradient(rgb(83, 83, 231), rgb(89, 147, 167));
 }
 /* Seccion para la barra de navegación */
 .secciones{
@@ -136,18 +145,16 @@ body,header,footer{
 /*Sección para el botón de la barra de navegación */
 .botonNavegacion{
     width: 35px; 
+    height: 23px;
     position: absolute;
     right: 5px;
-    margin: 2px;
+    background-color: rgb(6, 37, 175)
 }
-
-
 /* Seccion para los titulos de las secciones */
 .tituloInteres::before{
     font-size: 19px;
     content: "🎮";
     width: 100%;
-    
 }
 /*Sección para el título de la seccion Educacíon */
 .tituloEducacion::before{
@@ -181,7 +188,18 @@ body,header,footer{
 .visible{
     display: block;
 }
-
+/* Estilos para el título de cada sección */
+.ul{
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: rgb(5, 14, 99);
+}
+.texto-li{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    gap: 2px;
+}
 
 /* Animaciones */
 @keyframes invisible {
@@ -212,6 +230,6 @@ body,header,footer{
     }
     100% {
         height: 50vh;
-        bottom: 100vh; /* Ajusta el valor según tu preferencia */
+        bottom: 100vh; 
     }
 }
